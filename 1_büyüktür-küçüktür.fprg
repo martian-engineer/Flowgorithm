@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 10:03:31 "/>
+        <attribute name="created" value="MTA7IFBDMTA7IDIwMTktMTAtMDI7IDA5OjU1OjE5IDsgMTU2OA=="/>
+        <attribute name="edited" value="MTA7IFBDMTA7IDIwMTktMTAtMDI7IDEwOjAzOjMxIDsgMTU0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Girilen iki say&#305;n&#305;n b&#252;y&#252;k, k&#252;&#231;&#252;k, ya da e&#351;it olma durumlar&#305;n&#305; kontrol eder."/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="B" type="Real" array="False" size=""/>
+            <output expression="&quot;A reel say&#305;s&#305; i&#231;in bir de&#287;er giriniz.&quot;"/>
+            <input variable="A"/>
+            <output expression="&quot;B reel say&#305;s&#305; i&#231;in bir de&#287;er giriniz.&quot;"/>
+            <input variable="B"/>
+            <if expression="A&gt;B">
+                <then>
+                    <output expression="&quot; A say&#305;s&#305; B'den b&#252;y&#252;kt&#252;r.&quot;"/>
+                </then>
+                <else>
+                    <if expression="A&lt;B">
+                        <then>
+                            <output expression="&quot;A say&#305;s&#305; B'den k&#252;&#231;&#252;kt&#252;r.&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;A say&#305;s&#305; B say&#305;s&#305;na e&#351;ittir.&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

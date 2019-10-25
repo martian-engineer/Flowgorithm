@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 09:48:28 "/>
+        <attribute name="created" value="MTA7IFBDMTA7IDIwMTktMTAtMTY7IDA5OjAyOjA4IDsgMTU2Mw=="/>
+        <attribute name="edited" value="MTA7IFBDMTA7IDIwMTktMTAtMTY7IDA5OjQ4OjI4IDsgMTU3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="binler, yuzler, onlar, birler, sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;4 basamakl&#305; pozitif bir say&#305; giriniz.&quot;"/>
+            <input variable="sayi"/>
+            <while expression="sayi&lt;=0">
+                <output expression="&quot;Pozitif bir de&#287;er girin&quot;"/>
+                <input variable="sayi"/>
+            </while>
+            <assign variable="birler" expression="sayi%10"/>
+            <assign variable="onlar" expression="(sayi/100)%10"/>
+            <assign variable="yuzler" expression="sayi/1000"/>
+            <assign variable="binler" expression="(sayi/1000)%10"/>
+            <output expression="&quot;toplam= &quot;&amp;binler^2+yuzler^2+onlar^2+birler^2"/>
+        </body>
+    </function>
+</flowgorithm>

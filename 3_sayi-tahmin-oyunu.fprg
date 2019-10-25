@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 10:36:52 "/>
+        <attribute name="created" value="MTA7IFBDMTA7IDIwMTktMTAtMDk7IDA5OjA0OjUxIDsgMTU2NQ=="/>
+        <attribute name="edited" value="MTA7IFBDMTA7IDIwMTktMTAtMDk7IDEwOjM2OjUyIDsgMTU2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rasgele, tahmin, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="rasgele" expression="random(100)"/>
+            <assign variable="tahmin" expression="0"/>
+            <output expression="rasgele"/>
+            <output expression="&quot;Akl&#305;mdan bir say&#305; tuttum, tahmin et bakal&#305;m.&quot;"/>
+            <input variable="tahmin"/>
+            <do expression="tahmin!=rasgele">
+                <if expression="tahmin!=rasgele">
+                    <then>
+                        <if expression="tahmin&gt;rasgele">
+                            <then>
+                                <output expression="&quot;Daha k&#252;&#231;&#252;k bir de&#287;er girmeyi dene.&quot;"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Daha b&#252;y&#252;k bir de&#287;er girmeyi dene.&quot;"/>
+                            </else>
+                        </if>
+                        <input variable="tahmin"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+            <output expression="rasgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;sayac&amp;&quot; seferde bildin! Tebrik ederim.&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

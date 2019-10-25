@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 09:58:48 "/>
+        <attribute name="created" value="MTA7IFBDMTA7IDIwMTktMTAtMDI7IDA5OjIxOjQ3IDsgMTU2Mg=="/>
+        <attribute name="edited" value="MTA7IFBDMTA7IDIwMTktMTAtMDI7IDA5OjU4OjQ4IDsgMTU3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Girilen bir say&#305;n&#305;n negatif,pozitif ya da s&#305;f&#305;r oldu&#287;unu belirtir.&#13;&#10;"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir tam say&#305; giriniz&quot;"/>
+            <input variable="a"/>
+            <if expression="a&gt;0">
+                <then>
+                    <output expression="&quot;pozitif&quot;"/>
+                </then>
+                <else>
+                    <if expression="a&lt;0">
+                        <then>
+                            <output expression="&quot;negatif&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;s&#305;f&#305;r&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
